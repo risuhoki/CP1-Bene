@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0270f6fd-eb73-44d2-9159-d8b54d410447" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Atleta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Fundamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Preparador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Treino.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Atleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Atleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Fundamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Fundamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Preparador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Preparador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Treino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Treino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +33,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2NfijOV7iLAJvk3HDViIn8iYJLG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -55,11 +45,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/intellij-projects/benezinho-bom-de-bola/benezinho-bom-de-bola/src/main/resources",
+    "last_opened_file_path": "C:/Users/logonrmlocal/Desktop/simulado-CP1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,6 +60,26 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\intellij-projects\benezinho-bom-de-bola\benezinho-bom-de-bola\src\main\resources" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.fiap.Main" />
+      <module name="benezinho-bom-de-bola" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.fiap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

@@ -1,5 +1,7 @@
 package br.com.fiap.model;
 
+import jakarta.persistence.*;
+
 /**
  * @author Benefrancis do Nascimento
  * <p>
@@ -11,10 +13,20 @@ package br.com.fiap.model;
  * chute com peito do pé,
  * chute com a chapa do pé
  */
+
+@Entity
+@Table(name = "TB_FUNDAMENTO", uniqueConstraints = {
+        @UniqueConstraint(name = "UK_NM_FUNDAMENTO", columnNames = "NM_FUNDAMENTO")
+})
 public class Fundamento {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_FUNDAMENTO")
+    @SequenceGenerator(name = "SQ_FUNDAMENTO", sequenceName = "SQ_FUNDAMENTO")
+    @Column(name = "ID_FUNDAMENTO")
     private long id;
 
+    @Column(name = "NM_FUNDAMENTO")
     private String nome;
 
     public Fundamento() {

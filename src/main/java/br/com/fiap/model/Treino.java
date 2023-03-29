@@ -1,5 +1,7 @@
 package br.com.fiap.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 
 /**
@@ -8,22 +10,41 @@ import java.time.LocalDateTime;
  * Classe para representar o plano de treino específico para o atleta
  *
  */
+
+@Entity
+@Table(name = "TB_TREINO")
 public class Treino {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_TREINO")
+    @SequenceGenerator(name = "SQ_TREINO", sequenceName = "SQ_TREINO")
     private long id;
 
+    @Column(name = "NM_TREINO")
     private String nome;
 
+    @Column(name = "DESC_TREINO")
     private String descricao;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
+    @JoinColumn(name = "ID_PREPARADOR", referencedColumnName = "ID_PREPARADOR",
+    foreignKey = @ForeignKey(name = "FK_PREPARADOR", value = ConstraintMode.CONSTRAINT))
     private Preparador preparador;
 
+    @Column(name = "DT_INICIO_TREINO")
     private LocalDateTime inicio;
 
+    @Column(name = "DT_FIM_TREINO")
     private LocalDateTime fim;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
+    @JoinColumn(name = "ID_FUNDAMENTO", referencedColumnName = "ID_FUNDAMENTO",
+    foreignKey = @ForeignKey(name = "FK_FUNDAMENTO", value = ConstraintMode.CONSTRAINT))
     private Fundamento fundamento;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
+    @JoinColumn(name = "ID_ATLETA", referencedColumnName = "ID_ATLETA",
+    foreignKey = @ForeignKey(name = "FK_ATLETA", value = ConstraintMode.CONSTRAINT))
     private Atleta atleta;
 
 

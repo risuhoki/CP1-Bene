@@ -1,13 +1,34 @@
 package br.com.fiap.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "TB_ATLETA", uniqueConstraints = {
+        @UniqueConstraint(name = "UK_NM_ATLETA", columnNames = "NM_ATLETA")
+})
 public class Atleta {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_ATLETA")
+    @SequenceGenerator(name = "SQ_ATLETA", sequenceName = "SQ_ATLETA")
+    @Column(name = "ID_ATLETA")
     private long id;
+
+    @Column(name = "NM_ATLETA")
     private String nome;
+
+    @Column(name = "DT_NASC_ATLETA")
     private LocalDate nascimento;
+
+    @Column(name = "CPF_ATLETA")
     private String CPF;
+
+    @Column(name = "ALTURA_ATLETA")
     private float altura;
+
+    @Column(name = "PESO_ATLETA")
     private float peso;
 
     public Atleta() {
